@@ -1,4 +1,4 @@
-# Key - Value Store in Elixir
+# Key - Value Store Application in Elixir
 
 This is an [Elixir](https://elixir-lang.org/getting-started/introduction.html) application that works as a distributed key-value store.
 
@@ -14,5 +14,7 @@ Once the code has been compiled inside the `_build` folder, run
 ### Testing
 
 Mix comes with a testing framework called [ElixirUnit](https://elixir-lang.org/getting-started/introduction.html#elixirunit).
+
+Write the tests in the [`test`](./test/) folder, with `.exs` suffix.
 
 Run `mix test` to run the tests.
