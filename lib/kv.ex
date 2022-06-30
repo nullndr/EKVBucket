@@ -1,18 +1,16 @@
 defmodule KV do
-  @moduledoc """
-  Documentation for `KV`.
-  """
+  def start_link do
+    Task.start_link(fn -> loop(%{}) end)
+  end
 
-  @doc """
-  Hello world.
+  defp loop(map) do
+    receive do
+      {:get, key, caller} ->
+        send(caller, Map.get(map, key))
+        loop(map)
 
-  ## Examples
-
-      iex> KV.hello()
-      :world
-
-  """
-  def hello do
-    :world
+      {:put, key, value} ->
+        loop(Map.put(map, key, value))
+    end
   end
 end
