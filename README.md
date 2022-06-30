@@ -6,10 +6,19 @@ This is an [Elixir](https://elixir-lang.org/getting-started/introduction.html) a
 
 ### Development
 
-In order to compile the code, run `mix compile`.
+In order to compile the code, run:
 
-Once the code has been compiled inside the `_build` folder, run
-`iex -S mix` trying out the changes from an `iex` session.
+```sh
+$ mix compile
+```
+
+Once the code has been compiled inside the `_build` folder, run:
+
+```sh
+$ iex -S mix
+```
+
+trying out the changes from an `iex` session.
 
 ### Testing
 
@@ -17,4 +26,8 @@ Mix comes with a testing framework called [ElixirUnit](https://elixir-lang.org/g
 
 Write the tests in the [`test`](./test/) folder, with `.exs` suffix.
 
-Run `mix test` to run the tests.
+To execute the tests, run:
+
+```sh
+$ mix test
+```
